@@ -92,7 +92,7 @@ function setup() {
 
   temp2 = new Windoww({
     textColorSongs: "#000",
-    background: "UI/mean.png",
+    background: "UI/Pantalla2.png",
     buttonPause: "UI/botonPause.png",
     buttonPlay: "UI/botonPlay.png",
     songs: temporade2,
@@ -101,7 +101,7 @@ function setup() {
 
   temp3 = new Windoww({
     textColorSongs: "#000",
-    background: "UI/freaky.png",
+    background: "UI/Pantalla3.png",
     buttonPause: "UI/botonPause.png",
     buttonPlay: "UI/botonPlay.png",
     songs: temporade3,

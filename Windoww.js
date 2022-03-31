@@ -15,22 +15,22 @@ class Windoww {
         this.buttonPlay = buttonPlay;
         this.colorText = colorText;
         this.button = new Button({
-            x: 968,
-            y: 520,
+            x: 670,
+            y: 545,
             imagePause: buttonPause,
             imagePlay: buttonPlay
         });
 
         this.songs.forEach((item, id) => {
-            const posY = id > 2 ? 2 : 1
-            const posX = id > 2 ? id - 3 : id
+            const posY = id > 1 ? 2 : 1
+            const posX = id > 1 ? id - 2 : id
             const newSong = new Song({
                 textColor: textColorSongs,
                 name: item.name.toUpperCase(),
                 anime: item.anime,
                 location: item.location,
-                x: (posX + 1) * 200,
-                y: (230 * posY) + 70,
+                x: (posX + 4.5) * 200,
+                y: (230 * posY) + 41,
             })
             this.songCards.push(newSong);
         });
@@ -67,7 +67,7 @@ class Windoww {
         textAlign(CENTER);
         textSize(20);
         fill(0);
-        text(this.selectedSong.getName(), 977, 367);
+        text(this.selectedSong.getName(), 670, 490);
         this.button.draw();
 
         this.sliderSong.draw(this.selectedSong.getAudio().time(), this.selectedSong.getAudio().duration());
