@@ -15,7 +15,7 @@ class Song {
 
     }
     draw() {
-        text(this.name, this.x, this.y + 50);
+        text(this.name, this.x, this.y + 100);
         if (dist(mouseX, mouseY, this.x, this.y) < 60 && mouseIsPressed) {
             console.log("click");
             this.playSong();

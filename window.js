@@ -13,8 +13,8 @@ class Window  {
                 name: item.name, 
                 anime: item.anime,
                 location: item.location,
-                x: (id+1)*200,
-                y: 300
+                x: 1060,
+                y: (id+0.7)*210
             })
             this.songCards.push(newSong);
         });
