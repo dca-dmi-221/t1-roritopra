@@ -1,6 +1,6 @@
 let temp1;
 let temp2;
-let nero;
+let temp3;
 let playlist;
 
 const temporade1 = [{
@@ -78,14 +78,92 @@ const temporade3 = [{
 
 function setup() {
   createCanvas(1280, 720);
-  temp1 = new Window({
+  playlist = 0;
+  temp1 = new Windoww({
+    textColorSongs: "#000",
     background: "UI/Pantalla1.png",
-    songs:temporade1
+    buttonPause: "UI/botonPause.png",
+    buttonPlay: "UI/botonPlay.png",
+    songs:temporade1,
+    ColorText: 0
   })
+
+  console.log(temp1)
+
+  temp2 = new Windoww({
+    textColorSongs: "#000",
+    background: "UI/mean.png",
+    buttonPause: "UI/botonPause.png",
+    buttonPlay: "UI/botonPlay.png",
+    songs: temporade2,
+    colorText:0
+  })
+
+  temp3 = new Windoww({
+    textColorSongs: "#000",
+    background: "UI/freaky.png",
+    buttonPause: "UI/botonPause.png",
+    buttonPlay: "UI/botonPlay.png",
+    songs: temporade3,
+    colorText:0
+  })
+
 
 }
 
 function draw() {
   background(220);
-  temp1.draw();
+  switch (playlist) {
+    case 0:
+      temp1.draw();
+      break;
+    case 1:
+      temp2.draw();
+      break;
+    case 2:
+      temp3.draw();
+      break;
+    }
+}
+
+
+function mouseClicked() {
+
+
+  if (dist(mouseX, mouseY, 114, 684) < 100) {
+    playlist = 1;
+    temp2.stopPlaylist();
+    temp3.stopPlaylist();
+
+  }
+  if (dist(mouseX, mouseY, 421, 684) < 100) {
+    playlist = 2;
+    temp1.stopPlaylist();
+    temp3.stopPlaylist();
+
+  }
+  if (dist(mouseX, mouseY, 720, 684) < 100) {
+    playlist = 0;
+    temp2.stopPlaylist();
+    temp3.stopPlaylist();
+
+    }
+
+  switch (playlist) {
+    case 0:
+      temp1.mouseClicked();
+      break;
+    case 1:
+      temp2.mouseClicked();
+      break;
+    case 2:
+      temp3.mouseClicked();
+      break;
+    }
+}
+
+function mouseDragged(){
+  temp1.mouseDragged();
+  temp2.mouseDragged();
+  temp3.mouseDragged();
 }
