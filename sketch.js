@@ -44,19 +44,43 @@ const temporade2 = [{
   name: "Sky & Blue",
   anime: "Black Clover - Temporade 2",
   location: "Temporada2/sky&blue8.mp3",
-},
-{
-  name: "Overdrive",
-  anime: "Mean Girls",
-  location: "Mean/Overdrive.mp3",
+ 
 },
 ];
+
+const temporade3 = [{
+  name: "RIGHT NOW",
+  anime: "Black Clover - Temporade 3",
+  location: "Temporada3/RIGHTNOW9.mp3",
+},
+{
+  name: "Black Catcher",
+  anime: "Black Clover - Temporade 3",
+  location: "Temporada3/BlackCatcher10.mp3",
+},
+{
+  name: "Stories",
+  anime: "Black Clover - Temporade 3",
+  location: "Temporada3/Stories11.mp3",
+},
+{
+  name: "Everlasting Shine",
+  anime: "Black Clover - Temporade 3",
+  location: "Temporada3/EverlastingShine12.mp3",
+},
+{
+  name: "Grandeur",
+  anime: "Black Clover - Temporade 3",
+  location: "Temporada3/Grandeur13.mp3",
+},
+];
+
 
 function setup() {
   createCanvas(1280, 720);
   temp1 = new Window({
     background: "UI/Pantalla1.png",
-    songs:cloverSongs
+    songs:temporade1
   })
 
 }
