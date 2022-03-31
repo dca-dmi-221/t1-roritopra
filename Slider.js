@@ -7,9 +7,9 @@ class Slider {
         this.type = type;
         this.color = color;
         this.duration = duration;
-        this.x = 855;
+        this.x = 550;
         if(type==="song"){
-        this.y = 415;}
+        this.y = 480;}
         if(type==="volume"){
             this.y = 415+25;}
         this.height = 7;

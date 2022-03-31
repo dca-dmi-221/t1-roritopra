@@ -132,8 +132,8 @@ function mouseClicked() {
 
   if (dist(mouseX, mouseY, 114, 684) < 100) {
     playlist = 1;
+    temp1.stopPlaylist();
     temp2.stopPlaylist();
-    temp3.stopPlaylist();
 
   }
   if (dist(mouseX, mouseY, 421, 684) < 100) {
@@ -151,13 +151,13 @@ function mouseClicked() {
 
   switch (playlist) {
     case 0:
-      temp1.mouseClicked();
+      temp3.mouseClicked();
       break;
     case 1:
       temp2.mouseClicked();
       break;
     case 2:
-      temp3.mouseClicked();
+      temp1.mouseClicked();
       break;
     }
 }

@@ -67,7 +67,7 @@ class Windoww {
         textAlign(CENTER);
         textSize(20);
         fill(0);
-        text(this.selectedSong.getName(), 670, 490);
+        text(this.selectedSong.getName(), 670, 450);
         this.button.draw();
 
         this.sliderSong.draw(this.selectedSong.getAudio().time(), this.selectedSong.getAudio().duration());

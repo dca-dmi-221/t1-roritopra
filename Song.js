@@ -29,6 +29,7 @@ class Song {
         return this.audio
     }
     draw() {
+        textStyle(NORMAL);
         textAlign(LEFT);
         fill(color(this.textColor));
         textSize(14);
