@@ -21,7 +21,7 @@ const temporade1 = [{
 {
   name: "GUESS WHO IS BACK",
   anime: "Temporade 1",
-  location: "Temporada1/tomorrow-lillix.mp3",
+  location: "Temporada1/GUESSwhoISback4.mp3",
 }
 ];
 
@@ -38,7 +38,7 @@ const temporade2 = [{
 {
   name: "JUSTadICE",
   anime: "Black Clover - Temporade 2",
-  location: "Temporada2/Milkshake.mp3",
+  location: "Temporada2/JUSTadICE7.mp3",
 },
 {
   name: "Sky & Blue",
