@@ -13,19 +13,19 @@ class Song {
         this.y = y;
         this.location = location;
         this.audio = createAudio(location);
-        this.textColor= textColor
+        this.textColor = textColor
 
     }
-    getName(){
+    getName() {
         return this.name
     }
-    getX(){
+    getX() {
         return this.x
     }
-    getY(){
+    getY() {
         return this.y
     }
-    getAudio(){
+    getAudio() {
         return this.audio
     }
     draw() {
@@ -36,23 +36,25 @@ class Song {
         textWrap(WORD);
         textAlign(LEFT);
         text(this.name, this.x, this.y + 35, 120);
-        /*if (dist(mouseX, mouseY, this.x, this.y) < 60 && mouseIsPressed) {
-            this.playSong();
-        }*/
+     
     }
     playSong() {
         this.audio.play()
     }
-    pauseSong(){
+    pauseSong() {
         this.audio.pause()
     }
-    stopSong(){
+    stopSong() {
         this.audio.stop();
     }
-    
-    validateSongChange(selectedSong){
-        if(dist(mouseX, mouseY, this.x, this.y) < 60 && mouseIsPressed){
-            selectedSong= this
+
+    validateSongChange(selectedSong) {
+        if (dist(mouseX, mouseY, this.x, this.y) < 60 && mouseIsPressed) {
+            selectedSong = this
         }
     }
+    setVolume(newVolume) {
+        this.audio.volume(newVolume);
+    }
+
 }

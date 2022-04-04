@@ -7,16 +7,16 @@ class Slider {
         this.color = color;
         this.x = 550;
         if (type === "song") {
-            this.y = 480;
+            this.y = 450;
         }
         if (type === "volume") {
-            this.y = 415 + 25;
+            this.y = 415 + 70;
         }
         this.height = 7;
         this.width = 240;
         this.bgColor = 'rgba(50, 50,50, 0.5)';
-        this.bolaX = 961;
-        this.bolaY = 415 + (this.height / 2) + 25
+        this.bolaX = 675
+        this.bolaY = 415 + (this.height / 2) + 70
         this.volume = 0.5;
 
     }
