@@ -5,49 +5,49 @@ let playlist;
 
 const temporade1 = [{
     name: "Black Catcher",
-    movie: "Black Clover - Temporade 3",
+    anime: "Black Clover - Temporade 3",
     location: "Temporada3/BlackCatcher10.mp3"
   },
   {
     name: "Grandeur",
-    movie: "Black Clover - Temporade 3",
+    anime: "Black Clover - Temporade 3",
     location: "Temporada3/Grandeur13.mp3",
   },
   {
     name: "RIGHT NOW",
-    movie: "Black Clover - Temporade 3",
+    anime: "Black Clover - Temporade 3",
     location: "Temporada3/RIGHTNOW9.mp3",
   },
   {
     name: "Everlasting Shine",
-    movie: "Black Clover - Temporade 3",
+    anime: "Black Clover - Temporade 3",
     location: "Temporada3/EverlastingShine12.mp3",
   },
   {
     name: "Stories",
-    movie: "Black Clover - Temporade 3",
+    anime: "Black Clover - Temporade 3",
     location: "Temporada3/Stories11.mp3",
   }
 ];
 
 const temporade2 = [{
     name: "Black Rover",
-    movie: "Black Clover - Temporade 1",
+    anime: "Black Clover - Temporade 1",
     location: "Temporada1/BlackRover3.mp3",
   },
   {
     name: "GUESS who IS back",
-    movie: "Black Clover - Temporade 1",
+    anime: "Black Clover - Temporade 1",
     location: "Temporada1/GUESSwhoISback4.mp3",
   },
   {
     name: "Haruka Mirai",
-    movie: "Black Clover - Temporade 1",
+    anime: "Black Clover - Temporade 1",
     location: "Temporada1/HarukaMirai1.mp3"
   },
   {
     name: "PAINT it BLACK",
-    movie: "Black Clover - Temporade 1",
+    anime: "Black Clover - Temporade 1",
     location: "Temporada1/PAINTitBLACK2.mp3"
   }
  
@@ -55,22 +55,22 @@ const temporade2 = [{
 
 const temporade3 = [{
     name: "Gamushara",
-    movie: "Black Clover - Temporade 2",
+    anime: "Black Clover - Temporade 2",
     location: "Temporada2/Gamushara5.mp3",
   },
   {
     name: "JUSTadICE",
-    movie: "Black Clover - Temporade 2",
+    anime: "Black Clover - Temporade 2",
     location: "Temporada2/JUSTadICE7.mp3",
   },
   {
     name: "Rakugaki Page",
-    movie: "Black Clover - Temporade 2",
+    anime: "Black Clover - Temporade 2",
     location: "Temporada2/RakugakiPage6.mp3",
   },
   {
     name: "Sky & Blue",
-    movie: "Black Clover - Temporade 2",
+    anime: "Black Clover - Temporade 2",
     location: "Temporada2/sky&blue8.mp3",
   }
   
@@ -80,11 +80,11 @@ const temporade3 = [{
 
 
 function setup() {
-  createCanvas(1280, 720);
+  createCanvas(1920, 1080);
   playlist = 0;
   temp3 = new Window({
     textColorSongs: "#fff",
-    background: "screens/confessions.png",
+    background: "screens/Pantalla3.png",
     buttonPause: "screens/botonPause.png",
     buttonPlay: "screens/botonPlay.png",
     songs: temporade1,
@@ -93,7 +93,7 @@ function setup() {
 
   temp1 = new Window({
     textColorSongs: "#000",
-    background: "screens/mean.png",
+    background: "screens/Pantalla1.png",
     buttonPause: "screens/botonPause.png",
     buttonPlay: "screens/botonPlay.png",
     songs: temporade2,
@@ -102,7 +102,7 @@ function setup() {
 
   temp2 = new Window({
     textColorSongs: "#000",
-    background: "screens/freaky.png",
+    background: "screens/Pantalla2.png",
     buttonPause: "screens/botonPause.png",
     buttonPlay: "screens/botonPlay.png",
     songs: temporade3,
