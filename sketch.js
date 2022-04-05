@@ -80,7 +80,7 @@ const temporade3 = [{
 
 
 function setup() {
-  createCanvas(1920, 1080);
+  createCanvas(1280, 720);
   playlist = 0;
   temp3 = new Window({
     textColorSongs: "#fff",
