@@ -130,17 +130,17 @@ function draw() {
 function mouseClicked() {
 
 
-  if (dist(mouseX, mouseY, 114, 684) < 100) {
+  if (dist(mouseX, mouseY, 103, 26) < 100) {
     playlist = 1;
     temp2.stopPlaylist();
         temp3.stopPlaylist();
   }
-  if (dist(mouseX, mouseY, 421, 684) < 100) {
+  if (dist(mouseX, mouseY, 410, 26) < 100) {
     playlist = 2;
         temp1.stopPlaylist();
     temp3.stopPlaylist();
   }
-  if (dist(mouseX, mouseY, 720, 684) < 100) {
+  if (dist(mouseX, mouseY, 705, 26) < 100) {
     playlist = 0;
     temp1.stopPlaylist();
     temp2.stopPlaylist();
